@@ -3,6 +3,16 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Github, ExternalLink } from 'lucide-react';
 
+interface Project {
+  name: string;
+  year: string;
+  tech: string[];
+  image: string;
+  details: string;
+  github: string;
+  live: string;
+  isLandscape?: boolean;
+}
 
 const PROJECTS = [
   { 
@@ -36,8 +46,7 @@ const PROJECTS = [
 ];
 
 export default function Projects() {
-  const [selectedProject, setSelectedProject] = useState(null);
-
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   return (
     <section id="projects" className="min-h-screen py-36 px-6 md:px-12 lg:px-24 relative overflow-hidden">
 <h2 
