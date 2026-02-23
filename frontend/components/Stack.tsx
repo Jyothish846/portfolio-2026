@@ -3,11 +3,39 @@
 import React from 'react';
 
 const TECH_DATA = [
-  { category: "Programming Languages", items: ["Python", "JavaScript", "SQL", "HTML/CSS"] },
-  { category: "Frameworks & Libraries", items: ["Django", "Django REST Framework (DRF)", "Next.js", "RESTful APIs", "React", "Redux", "Tailwind CSS"] },
-  { category: "Databases", items: ["PostgreSQL", "MySQL", "SQLite", "Pinecone (Vector Database)"] },
-  { category: "Tools & Platforms", items: ["Git", "GitHub", "Terminal/CLI", "CI/CD (Vercel, Render)", "Vite", "n8n"] },
-  { category: "AI & ML Exposure", items: ["RAG Pipelines", "LLM Orchestration", "Neural Text-to-Speech (ElevenLabs)", "LangChain", "OpenAI API", "Gemini API"] }
+{ category: "Programming Languages", items: ["Python", "JavaScript", "SQL"] },
+
+{ category: "Frameworks & Libraries", items: [
+  "Django",
+  "Django REST Framework (DRF)",
+  "Next.js",
+  "React",
+  "Tailwind CSS",
+  "REST APIs"
+]},
+
+{ category: "Databases", items: [
+  "PostgreSQL",
+  "MySQL",
+  "Pinecone (Vector Database)",
+  "Chroma (Vector Database)"
+]},
+
+{ category: "Tools & Platforms", items: [
+  "Git",
+  "GitHub",
+  "Linux / Terminal",
+  "CI/CD (Vercel, Render)"
+]},
+
+{ category: "AI & LLM", items: [
+  "Retrieval-Augmented Generation (RAG)",
+  "LangChain",
+  "Gemini API",
+  "Embeddings",
+  "Prompt Engineering",
+  "Neural Text-to-Speech (ElevenLabs)"
+]}
 ];
 
 const LOGOS = [
@@ -18,12 +46,11 @@ const LOGOS = [
   { name: 'Django', src: '/logos/django.svg' },
   { name: 'next.js', src: '/logos/nextjs_icon_dark.svg' }, 
   { name: 'React', src: '/logos/react.svg' },
-  { name: 'Redux', src: '/logos/redux.svg' },
   { name: 'Tailwind CSS', src: '/logos/tailwindcss.svg' },
   { name: 'PostgreSQL', src: '/logos/postgresql.svg' },
   { name: 'MySQL', src: '/logos/mysql.svg' },
-  { name: 'sqlite', src: '/logos/sqlite.svg' },
   { name: 'pinecone', src: '/logos/pinecone.svg' },
+  { name: 'Chroma', src: '/logos/chroma.svg' },
   { name: 'LangChain', src: '/logos/langchain.svg' },
   { name: 'OpenAI', src: '/logos/openai.svg' },
   { name: 'Gemini', src: '/logos/gemini.svg' },
@@ -32,8 +59,6 @@ const LOGOS = [
   { name: 'terminal/CLI', src: '/logos/terminal.svg' },
   { name: 'Vercel', src: '/logos/vercel_dark.svg' },
   { name: 'render', src: '/logos/render.svg' },
-  { name: 'Vite', src: '/logos/vite.svg' },
-  { name: 'n8n', src: '/logos/n8n.svg' }, 
 ];
 
 export default function Stack() {
